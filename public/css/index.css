@@ -27,6 +27,7 @@ main{
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
+    position: relative;
 }
 
 img{
@@ -125,4 +126,26 @@ input{
 
 .kickWord button:hover{
     cursor: pointer;
+}
+
+.wordView{
+    position: absolute;
+    right: 400px;
+    bottom: 100px;
+    z-index: 1;
+}
+
+.wordView strong{
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+}
+
+.able{
+    background-color: #E1ECF4;
+    color: #39739D;
+}
+
+.hide{
+    display: none;
 }
