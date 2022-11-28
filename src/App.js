@@ -8,6 +8,7 @@ export default function App() {
   let erro;
   const [word, setWord] = useState([]);
   const [test, setTest] = useState(true);
+  const [selectButton, setSelectButton] = useState([]);
   const alphabet = 
   [
     "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
@@ -22,7 +23,12 @@ export default function App() {
 
           <div className="words">
             <div className="breakWord">
-              {alphabet.map((letter) => <Letras letter = {letter} test={test}/>)}
+              <Letras 
+              alphabet={alphabet} 
+              test={test}
+              selectButton={selectButton}
+              setSelectButton={setSelectButton}/>
+
             </div>
 
             <Chute />
